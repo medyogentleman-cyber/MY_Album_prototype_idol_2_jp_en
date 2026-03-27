@@ -643,11 +643,9 @@ function setLanguage(lang) {
     localStorage.setItem('myAlbumLang', lang);
     document.querySelectorAll('.lang-btn').forEach(btn => {
         if (btn.dataset.lang === lang) {
-            btn.classList.add('active', 'scale-110', 'bg-white', 'text-primary', 'shadow');
-            btn.classList.remove('text-gray-400');
+            btn.classList.add('active');
         } else {
-            btn.classList.remove('active', 'scale-110', 'bg-white', 'text-primary', 'shadow');
-            btn.classList.add('text-gray-400');
+            btn.classList.remove('active');
         }
     });
 

@@ -277,3 +277,35 @@ select.status-rejected { color: var(--danger) !important; }
 
 /* Grid for Fan Original */
 .fan-grid { display: grid; grid-template-columns: 1fr; gap: 12px; }
+
+/* Language Switcher */
+.lang-switcher {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  display: flex;
+  background: #E5E5EA; /* 少し濃いめの背景で白ボタンを目立たせる */
+  border-radius: 20px;
+  padding: 4px;
+  z-index: 1000;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.04);
+}
+
+.lang-btn {
+  border: none;
+  background: transparent;
+  padding: 6px 12px;
+  border-radius: 16px;
+  font-size: 12px;
+  font-weight: 800;
+  cursor: pointer;
+  color: #8E8E93;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.lang-btn.active {
+  background: #FFF;
+  color: var(--primary-color);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transform: scale(1.02);
+}
